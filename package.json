@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@types/slick-carousel": "^1.6.37",
+        "axios": "^0.21.1",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.36.0",
+        "sass-loader": "^12.1.0",
+        "typescript": "^4.4.4",
+        "vue": "^2.6.14",
+        "vue-loader": "^15.9.7",
+        "vue-router": "^3.5.2",
+        "vue-template-compiler": "^2.6.14",
+        "vuex": "^3.6.2"
+    },
+    "dependencies": {
+        "@splidejs/vue-splide": "^0.3.5",
+        "bigpicture": "^2.5.3",
+        "vue-cookie-law": "^1.13.3",
+        "vue-owl-carousel": "^2.0.3",
+        "vue-radial-progress": "^0.3.2",
+        "vue-slick-carousel": "^1.0.6",
+        "vuelidate": "^0.7.6"
+    }
+}
