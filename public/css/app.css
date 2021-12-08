@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap);
+body, html, #app, .app {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h2, h3, h4 {
+  color: #69a1ab;
+}
+
+h1, h2, h3, h4 {
+  font-family: "brigadiersansregular" !important;
+}
+
+p, li, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  color: #69a1ab;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.navBar {
+  padding: 5px;
+  background-color: #FFF;
+}
+.navBar__link {
+  display: flex;
+  margin: 0;
+}
+.navBar__link li {
+  margin: 10px;
+  list-style-type: none;
+  font-size: 17px;
+}
+.navBar__link li a {
+  text-decoration: none;
+  color: #555555;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  border: 2px solid #257282;
+  color: #257282;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: #257282;
+  color: #FFF;
+}
+
+.button-link {
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  border: 2px solid #257282;
+  color: #257282;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.button-link:hover {
+  color: #fff;
+  background-color: #257282;
+  transition: all 0.2s ease-in-out;
+}
+
+section {
+  height: 100vh;
+}
+
+.sidenav-hamburger {
+  position: fixed;
+  top: 2rem;
+  right: 13%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 180;
+}
+
+/* @media (max-width: 480px){
+  .sidenav-hamburger {
+  display: none;
+}
+} */
+@media (max-width: 768px) {
+  .sidenav-hamburger {
+    display: none;
+  }
+}
+.sidenav-close {
+  /* border: 1px solid red; */
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 210;
+  display: none;
+}
+
+.side-container {
+  position: fixed;
+  top: 0%;
+  /* right: 0%; */
+  z-index: 200;
+  /* background: #fff; */
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.side-container .presence {
+  /* width: 70%; */
+  height: 100%;
+  flex-basis: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+}
+.side-container .presence h2,
+.side-container .presence li {
+  color: #257282;
+}
+.side-container .presence .presence-header {
+  margin-top: 2%;
+}
+.side-container .presence .presence-header h2 {
+  text-transform: uppercase;
+}
+.side-container .presence .presence-footer {
+  /* border: 1px solid black; */
+  margin-bottom: 2%;
+}
+.side-container .presence .presence-footer ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.side-container .presence .presence-footer ul li {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0 1rem;
+  letter-spacing: 0.1rem;
+  font-family: "brigadiersansregular" !important;
+  /* &:not(:nth-of-type(6)){
+    border: 1px solid red !important;
+  } */
+  /* &:nth-last-of-type() */
+}
+.side-container .presence .presence-footer ul li:not(:nth-of-type(1)) {
+  padding-left: 1.3rem;
+  /* border: 1px solid red; */
+  border-left: 1px solid #00000029;
+  /* border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: grey; */
+}
+.side-container .presence img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* border: 1px solid red; */
+}
+
+/* <select> styles */
+.language-select {
+  /* Reset */
+  /* border: 1px solid red; */
+  border: 0;
+  outline: 0;
+  /* Personalize */
+  width: 3.4rem;
+  height: 2rem;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  /* border-radius: 0.25rem; */
+  cursor: pointer;
+  /* <option> colors */
+  /* Remove focus outline */
+  /* Remove IE arrow */
+}
+.language-select language-option {
+  font-weight: 600;
+}
+
+.side-nav {
+  top: 0%;
+  right: 0%;
+  z-index: 200;
+  background: #fff;
+  flex-basis: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.side-nav .links {
+  list-style-type: none;
+  /* border: 1px solid red; */
+  margin: 5rem 0 0 0;
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+}
+.side-nav .links li {
+  text-transform: uppercase;
+  font-family: "brigadiersansregular" !important;
+  /* border: 1px solid blue; */
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  color: #69a1ab;
+  letter-spacing: 0.2rem;
+  border-bottom: 3px solid #fff;
+  /* cursor: pointer; */
+  /* &:hover {
+    border-bottom: 3px solid #fda041;
+    transition: border-bottom 0.3s ease-in-out;
+  } */
+}
+.side-nav .social-icons {
+  /* margin-top: auto; */
+  margin: auto 0 2rem 0;
+}
+.side-nav .social-icons .footer-social-icon {
+  color: #257282;
+}
+.side-nav .social-icons .footer-social-icon:hover {
+  color: #fda041;
+}
+.side-nav .copyright {
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .language-select {
+    width: 3.2rem;
+    font-size: 0.8rem;
+  }
+}
+.mobile-toggle-div {
+  display: none;
+  /* border: 1px solid red; */
+}
+.mobile-toggle-div .site-menu-toggle {
+  color: #fda041;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-toggle-div {
+    display: block;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    width: 6rem;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-toggle-div .site-menu-toggle {
+    font-size: 1.5em !important;
+  }
+
+  .site-mobile-menu-body .language-div {
+    display: none !important;
+  }
+
+  .mobile-logo-div {
+    /* display: block;
+    position: fixed;
+    top: 3rem;
+    left: 1rem;
+    width: 4.5rem;
+    z-index: 90;
+    display: flex; */
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 3rem;
+    left: 1rem;
+    width: 6.5rem;
+    z-index: 90;
+    display: flex;
+  }
+  .mobile-logo-div a {
+    padding: 0;
+  }
+  .mobile-logo-div img {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: block;
+  }
+}
+
